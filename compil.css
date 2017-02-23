@@ -15,6 +15,7 @@ html {
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
+    
 }
 
 /* Sections
@@ -26,7 +27,13 @@ html {
 
 body {
   margin: 0;
-  font-size: 20px;
+}
+
+div, h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
 }
 
 /**
@@ -467,3 +474,4 @@ template {
 section{
     padding-bottom: 70px;
 }
+
