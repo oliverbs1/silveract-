@@ -1,0 +1,83 @@
+.container {
+    height: 650px;
+    box-shadow: 1px 1px 12px #555;
+    margin-top: 30px;
+}
+
+.vr {
+    width: 40%;
+    height: 650px;
+    float: left;
+}
+
+.text {
+    height: 650px;
+    width: 60%;
+    float: left;
+    position: relative;
+}
+
+.text h2 {
+    color: #E55155;
+    margin: 25px 0 5px 25px;
+}
+
+.text h3 {
+    margin-left: 25px;
+}
+
+.pBlack {
+    margin-left: 25px;
+    margin-top: 15px;
+    line-height: 30px;
+    width: 700px;
+}
+
+.ico {
+    margin-right: 15px;
+}
+
+.text li {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.right {
+    position: absolute;
+    top: 231px;
+    left: 46%;
+}
+
+.sep {
+    height: 2px;
+    width: 715px;
+    background-color: #95989A;
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.name {
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.red {
+    color: #E55155;
+    font-size: 22px;
+    margin-right: 9px;
+    letter-spacing: 1px;
+}
+
+.desc {
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 470px;
+    line-height: 26px;
+}
+
+.papy {
+    position: absolute;
+    top: 391px;
+    left: 70%;
+}
