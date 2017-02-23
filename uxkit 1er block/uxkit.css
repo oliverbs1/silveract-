@@ -50,26 +50,16 @@ table {
 	border-spacing: 0;
 }
 
-/* block general */
-
-.container{
-    max-width: 1024px;
-    margin: 10px auto;
-    display: flex;
-}
-
 /* réglage carte */
 
 .card{
-    width: calc(25% - 24px);
     padding: 10px;
     background: #fff;
     box-sizing: border-box;
     margin-right: 24px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column-reverse wrap;
     font-size: 0.54rem;
-    position: relative;
 }
 
 /* réglage ombre */
@@ -84,18 +74,11 @@ table {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);   
 }
 
-/*réglage image*/
-
-.card img{
-    width: 100%;
-}
-
 /* réglage texte */
 
 .card div {
     display: flex;
     justify-content: space-between;
-    margin-top: 7px;
 }
 
 .baseline {
@@ -105,6 +88,10 @@ table {
 .card div:last-child {
     -ms-align-items: center;
     align-items: center;
+}
+
+.card img{
+    margin-top: 7px;
 }
 
 .price {
@@ -125,4 +112,9 @@ table {
     position: absolute;
     right: -40px;
     top: 40%;
+}
+
+@media all and (max-width:750px){
+    
+    
 }

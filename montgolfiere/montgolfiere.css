@@ -45,24 +45,88 @@ table {
 	border-spacing: 0;
 }
 
+/* Header */
+
+.subtitle{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+
+
 
 /*PARENTS*/
 
-.container{
-    width: 1280px;
-    height: 472px;
-    background-image: url(montgolfiere.jpg);
+.mongo-bg{
+    height: 400px;
+    background-image: url('montgolfiere.jpg');
     background-size: auto;
     background-repeat: no-repeat;
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
 }
 
-/*ENFANTS*/
+
+
+/* Texte */
+
+.inbox-1 {
+    display: flex;
+    width: auto;
+    padding: 32px;
+}
+
+.inbox-1 h4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		color: #fff;
+        margin-left: 32px;
+}
+
+/*BOX*/
 
 .box{
-    width: 550px;
-    height: 250px;
     background: #fff;
-    align-self: flex-end;
+    border: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 16px;
+    flex-wrap: wrap;
 }
+
+.box p{
+    margin-top: 10px;
+}
+
+.red-button{
+ 	position: relative;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 160px;
+	height: 34px;
+	text-align: center;
+	vertical-align:middle;
+	margin-top: 30px;
+	background-color: #E55458;
+	box-sizing: border-box;
+	border-radius: 2px;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #fff;
+}
+
+@media all and (max-width: 758px){
+    .inbox{
+        margin-top: 20px;
+    }
+    .box{
+        margin-top: 20px;
+    }
+}
+
