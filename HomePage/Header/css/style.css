@@ -64,10 +64,12 @@ table {
 .logo img{
     width: 64px;
     height: 64px;
+    cursor: pointer;
 }
 
 .logo h3{
     margin-left: 24px;
+    cursor: pointer;
 }
 
 .navi{
@@ -77,13 +79,14 @@ table {
 
 .navi h4{
     margin: 24px;
+    cursor: pointer;
 }
 
 /* image */
 
 .content{
     height: 528px;
-    background: #E55155;
+    background: lightgrey;
     display: flex;
     flex-flow: column wrap;
     justify-content:center;
@@ -109,16 +112,18 @@ table {
     align-items: center;
     height: 64px;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .check-in{
     display: flex;
     border: solid #E55155 4px;
     padding: 16px;
+    cursor: pointer;
 }
 
 .check-in img{
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .bordure{
@@ -129,27 +134,41 @@ table {
 }
 
 .bordure img{
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 /* boutton resa */
 
 .check-out{
-    background: #E55155;
+    border: solid #E55155 4px;
     display: flex;
     padding: 16px;
-    margin-left: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#datepicker{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.tog{
+    position: absolute;
+    bottom: 100px;
+    cursor: pointer;
+    background: #E55155;
+    padding: 16px;
+    border-radius: 5px;
 }
 
 /* Shutter Out Horizontal */
 .hvr-shutter-out-horizontal {
-  display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
-  background: #e1e1e1;
+  background: #fff;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -181,4 +200,54 @@ table {
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+@media all and (min-width: 750px){
+    .red-btn{
+        display: none;
+    }
+    
+    .logo-resp{
+        display: none;
+    }
+    
+}
+
+
+@media all and (max-width:750px){
+    .barre-resa{
+        display: none;
+    }
+    
+    .navi{
+        display: none;
+    }
+    
+    .logo{
+        display: none;
+    }
+    
+    .logo-resp{
+        margin-top: 3px;
+    }
+    
+    .logo-resp img{
+        width: 64px;
+        height: 64px;
+    }
+    
+    .logo-resp h3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .red-btn{
+    background: #E55155;
+    margin-top: 30px;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+    
 }
