@@ -3,38 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Silver act</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
-
+    <link rel='stylesheet' href='css/font.css'>
+    <link rel='stylesheet' href='css/grille.css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/pignose.calendar.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/moment.js"></script>
-    <link rel="stylesheet" href="css/pignose.calendar.css">
-    <script src="js/pignose.calendar.js"></script>
   </head>
   <body>
 
-<header>
+<header class='container'>
+<div class='grid'>
   <nav>
     <ul>
-      <li><a href="#aboutme">Qui sommes-nous?</a></li>
-      <li><a href="#">Connexion</a></li>
-      <li><a href="#">Inscription</a></li>
+      <li><a href="#aboutme" class='FontWhite'>Qui sommes-nous?</a></li>
+      <li><a href="#" class='FontWhite'>Connexion</a></li>
+      <li><a href="#" class='FontWhite'>Inscription</a></li>
     </ul>
   </nav>
+</div>
 </header>
 
-
+<div class='container'>
+<div class='grid'>
 <div class="videoheader">
   <video muted autoplay="true" loop="true" audio='mute'  src="video/silveract.mp4" poster="posterimage.jpg">
 </video>
     <div id='bg'>
     </div>
 <div class="textheader">
-  <h2>Parce que notre quotidien, c’est d’animer le votre !</h2>
-  <h3>Vos proches s'ennuient, ça tombe bien ! Nous sommes là pour leur proposer des expériences uniques. </h3>
+  <h2 class='FontWhite'>Parce que notre quotidien, c’est d’animer le votre !</h2>
+  <h3 class='FontWhite'>Vos proches s'ennuient, ça tombe bien ! Nous sommes là pour leur proposer des expériences uniques. </h3>
+</div>
+</div>
 </div>
 </div>
 
@@ -88,6 +90,9 @@
     </div>
  
   <!-- Script JS -->
+<script src="js/moment.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/pignose.calendar.js"></script>
 <script src="js/script.js"></script>
   </body>
 </html>
