@@ -47,18 +47,19 @@ table {
 	border-spacing: 0;
 }
 
-/* Header menu navigation */
+/* Header menu navigation responsive web */
 
 .resp{
     height: 72px;
     background: #E55155;
     display: flex;
+    overflow: hidden;
+    z-index: 1000;
 }
 
 .logo{
     display: flex;
     align-items: center;
-    margin-left: 16px;
 }
 
 .logo img{
@@ -97,11 +98,21 @@ table {
 /* Texte */
 
 .stripe h2{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .stripe h4{
-    padding-top: 100px;
+    padding-top: 20px;
+}
+
+@media all and (max-width: 750px){
+.red-btn{
+    background: #E55155;
+    margin-top: 50px;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    }  
 }
 
 /* barre de reservation */
@@ -111,9 +122,10 @@ table {
     justify-content: center;
     align-items: center;
     height: 64px;
-    flex-wrap: wrap;
     margin-top: 10px;
 }
+
+/* choix animation */
 
 .check-in{
     display: flex;
@@ -126,6 +138,17 @@ table {
     padding-left: 30px;
 }
 
+.tog{
+    position: absolute;
+    bottom: 100px;
+    cursor: pointer;
+    background: #E55155;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+/* calendar */
+
 .bordure{
     display: flex;
     padding-left: 24px;
@@ -135,6 +158,11 @@ table {
 
 .bordure img{
     padding-left: 30px;
+}
+
+#datepicker{
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 /* boutton resa */
@@ -147,21 +175,8 @@ table {
     margin-left: 10px;
 }
 
-#datepicker{
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.tog{
-    position: absolute;
-    bottom: 100px;
-    cursor: pointer;
-    background: #E55155;
-    padding: 16px;
-    border-radius: 5px;
-}
-
 /* Shutter Out Horizontal */
+
 .hvr-shutter-out-horizontal {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -174,6 +189,7 @@ table {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .hvr-shutter-out-horizontal:before {
   content: "";
   position: absolute;
@@ -194,9 +210,11 @@ table {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
   color: white;
 }
+
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -211,11 +229,28 @@ table {
         display: none;
     }
     
+    .burger-menu{
+        display: none;
+    }
+    
+    .barre{
+        display: none;
+    }
+    
+    
 }
 
 
 @media all and (max-width:750px){
-    .barre-resa{
+
+    /* élément qui disparaissent */
+
+    #search-box{
+        display: none;
+    }
+    
+    
+    .nav-web{
         display: none;
     }
     
@@ -226,9 +261,21 @@ table {
     .logo{
         display: none;
     }
+
+    /* menu burger et barre de nav mobile */
+    
+    .nav-resp{
+    height: 72px;
+    display: flex;
+    overflow: hidden;
+    z-index: 1000;
+    position: fixed;
+    }
     
     .logo-resp{
         margin-top: 3px;
+        display: flex;
+        justify-content: center;
     }
     
     .logo-resp img{
@@ -236,18 +283,62 @@ table {
         height: 64px;
     }
     
-    .logo-resp h3{
+    .barre{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+        position: fixed;
+    }
+    .burger-menu{
+        background: #E55155;
+        min-height: 100%;
+        max-height: 100%;
+        width: 80%;
         display: flex;
-        justify-content: space-between;
+        flex-flow: column wrap;
+    }
+    
+    .burger-header{
+        height: 100px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
     
-    .red-btn{
-    background: #E55155;
-    margin-top: 30px;
-    padding: 16px;
-    cursor: pointer;
-    border-radius: 3px;
-}
     
+    .burger-header h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .burger-arrow{
+        background-image: url(../img/icons/ic_arrow_back_black_24dp_1x.png) no-repeat;
+        width: 24px;
+        height: 24px;
+        background-position: cover;
+        background-size: 100% 100%;
+    }
+    
+    
+    .burger-silver-logo{
+        width: 64px;
+        height: 64px;
+    }
+    
+    .burger-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .burger-body h4{
+        margin-top: 40px;
+    }
+    
+    .active{
+        position: absolute;
+        background: rgba(0,0,0,0.3);
+    } 
 }
