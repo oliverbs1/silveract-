@@ -49,60 +49,113 @@ table {
 
 /* Header menu navigation responsive web */
 
-.resp{
-    height: 72px;
-    background: #E55155;
-    display: flex;
-    overflow: hidden;
-    z-index: 1000;
+header {
+    width: 100%;
 }
 
+.nav-web {
+    position: fixed;
+    z-index: 10000;
+}
+
+.resp{
+    width: 1280px;
+    height: 72px;
+    background: #E55155;
+    overflow: hidden;
+    z-index: 10000000000000000 !important;
+    position: relative;
+}
+
+
+/*
+@media all and(min-width: 1280px){
+    .resp{
+    width: 100%;
+    height: 72px;
+    background: #E55155;
+    overflow: hidden;
+    z-index: 1000;
+    position: relative;
+    }
+}
+*/
+
 .logo{
-    display: flex;
     align-items: center;
+    margin-left: 24px;
+    float: left;
+    margin-top: 12px;
 }
 
 .logo img{
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
+    float: left;
 }
 
 .logo h3{
+    height: 72px;
     margin-left: 24px;
     cursor: pointer;
+    transform: translateY(19%);
+    float: left;
 }
 
 .navi{
-    display: flex;
-    justify-content: flex-end;
+    overflow: hidden;
+    float: right;
+    display: inline;
 }
 
 .navi h4{
     margin: 24px;
     cursor: pointer;
+    float: left;
 }
+
+
+/* video */
+
+.background-black{
+    position: relative;
+}
+
+
+.videoheader{
+    height: 528px;
+    overflow: hidden;
+    position: relative;
+}
+
+video{
+    z-index: 1000;
+}
+
 
 /* image */
 
 .content{
-    height: 528px;
-    background: lightgrey;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Texte */
 
-.stripe h2{
+
+
+.content h2{
     padding-bottom: 20px;
 }
 
-.stripe h4{
-    padding-top: 20px;
+.content h4{
+    padding-top: 100px;
 }
 
 @media all and (max-width: 750px){
@@ -117,21 +170,37 @@ table {
 
 /* barre de reservation */
 
-#search-box{
+.flex-search-box{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 64px;
-    margin-top: 10px;
 }
+
+#search-box{
+    align-items: center;
+    display: flex;
+    height: 64px;
+    width: 960px;
+    margin-top: -35px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 18px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    z-index: 100;
+}
+
+#ui-datepicker-div{
+    z-index: 100000 !important;
+}
+
+
 
 /* choix animation */
 
 .check-in{
+    width: 400px;
     display: flex;
-    border: solid #E55155 4px;
     padding: 16px;
     cursor: pointer;
+    border-right: solid 1px grey;
 }
 
 .check-in img{
@@ -150,75 +219,45 @@ table {
 /* calendar */
 
 .bordure{
+    width: 360px;
     display: flex;
     padding-left: 24px;
-    border: solid #E55155 4px;
-    padding: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .bordure img{
-    padding-left: 30px;
+    padding-left: 90px;
 }
 
 #datepicker{
     cursor: pointer;
     margin-left: 10px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    z-index: 1005;
+}
+
+#datepickerImage{
+    cursor: pointer;
 }
 
 /* boutton resa */
 
 .check-out{
-    border: solid #E55155 4px;
-    display: flex;
-    padding: 16px;
+    width: 200px;
+    background-color: #E55155;
+    height: 64px;
     cursor: pointer;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Shutter Out Horizontal */
 
-.hvr-shutter-out-horizontal {
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  background: #fff;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-
-.hvr-shutter-out-horizontal:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #E55155;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
-  color: white;
-}
-
-.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
 
 @media all and (min-width: 750px){
     .red-btn{

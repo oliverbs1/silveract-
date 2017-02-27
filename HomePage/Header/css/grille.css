@@ -30,40 +30,40 @@ body {
 /* ############################################## */
 /* ############ ÉTENDUES DE COLONNES ############ */
 .col-1 {
-  min-width: calc(1 / 12 * 100% - 24px);
+  min-width: calc(1 / 12 * 100% - 20px);
 }
 .col-2 {
-  min-width: calc(2 / 12 * 100% - 24px);
+  min-width: calc(2 / 12 * 100% - 20px);
 }
 .col-3 {
-  min-width: calc(3 / 12 * 100% - 24px);
+  min-width: calc(3 / 12 * 100% - 20px);
 }
 .col-4 {
-  min-width: calc(4 / 12 * 100% - 24px);
+  min-width: calc(4 / 12 * 100% - 20px);
 }
 .col-5 {
-  min-width: calc(5 / 12 * 100% - 24px);
+  min-width: calc(5 / 12 * 100% - 20px);
 }
 .col-6 {
-  min-width: calc(6 / 12 * 100% - 24px);
+  min-width: calc(6 / 12 * 100% - 20px);
 }
 .col-7 {
-  min-width: calc(7 / 12 * 100% - 24px);
+  min-width: calc(7 / 12 * 100% - 20px);
 }
 .col-8 {
-  min-width: calc(8 / 12 * 100% - 24px);
+  min-width: calc(8 / 12 * 100% - 20px);
 }
 .col-9 {
-  min-width: calc(9 / 12 * 100% - 24px);
+  min-width: calc(9 / 12 * 100% - 20px);
 }
 .col-10 {
-  min-width: calc(10 / 12 * 100% - 24px);
+  min-width: calc(10 / 12 * 100% - 20px);
 }
 .col-11 {
-  min-width: calc(11 / 12 * 100% - 24px);
+  min-width: calc(11 / 12 * 100% - 20px);
 }
 .col-12 {
-  min-width: calc(12 / 12 * 100% - 24px);
+  min-width: calc(12 / 12 * 100% - 20px);
 }
 /* ######### ÉTENDUES DE COLONNES [FIN] ######### */
 /* ############################################## */

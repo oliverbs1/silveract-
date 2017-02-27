@@ -112,14 +112,14 @@
 	cursor: n-resize;
 	height: 7px;
 	width: 100%;
-	top: -5px;
+	top: -35px;
 	left: 0;
 }
 .ui-resizable-s {
 	cursor: s-resize;
 	height: 7px;
 	width: 100%;
-	bottom: -5px;
+	bottom: -35px;
 	left: 0;
 }
 .ui-resizable-e {
@@ -889,6 +889,8 @@ body .ui-tooltip {
 .ui-widget {
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 1em;
+    box-sizing: border-box;
+    box-shadow: 0 8px 18px 0px rgba(0,0,0,0.1);
 }
 .ui-widget .ui-widget {
 	font-size: 1em;
@@ -901,7 +903,7 @@ body .ui-tooltip {
 	font-size: 1em;
 }
 .ui-widget.ui-widget-content {
-	border: 1px solid #E55155;
+	border: none ;
 }
 .ui-widget-content {
 	border: 1px solid #E55155;
