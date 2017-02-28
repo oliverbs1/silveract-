@@ -16,8 +16,8 @@ body {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
 }
+
 [class*=col-] {
   margin-right: 24px;
   box-sizing: border-box;

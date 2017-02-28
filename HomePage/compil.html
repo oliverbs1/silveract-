@@ -7,19 +7,129 @@
     <link rel='stylesheet' href="montgolfiere/montgolfiere.css">
     <link rel='stylesheet' href='prestataire/prestataire.css'>
     <link rel='stylesheet' href='gift/Gift.css'>
+    <link rel='stylesheet' href='Header/css/style.css'>
     <link rel='stylesheet' href='compil.css'>
+    <link rel='stylesheet' href='Header/css/jquery-ui.css'>
     <link rel='stylesheet' href='font/font.css'>
     <link rel='stylesheet' href='grille/grille.css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
+            <!-- MENU NAV -->
+           <header class='nav-web'>
+               <div class='container'>
+                   <div class='grid'>
+                     <div class='resp'>
+                        <div class='logo-web'>
+                              <img src='Header/img/Logowhite.png'>
+                              <h3 class='FontWhite'>Silver Act'</h3>
+                        </div>
+                        <div class='logo-mobile'>
+                            <h4 class='FontWhite'>Silver Act'</h4>
+                            <img src='Header/img/Logowhite.png'/>
+                        </div>
+                        <div class='icon-burger'>
+                            <div class='string'></div>
+                            <div class='string1'></div>
+                            <div class='string2'></div>
+                        </div>
+                        <nav class='navi'>
+                              <h4 class='FontWhite'>Les expériences</h4>
+                              <h4 class='FontWhite'>Les Box</h4>
+                              <h4 class='FontWhite'>Connexion</h4>
+                              <h4 class='FontWhite'>Inscription</h4>
+                        </nav>
+                    </div>
+                    <div id='menu-hamburger'>
+                         <div class='cross'>
+                             <div class='cross-line'></div>
+                             <div class='cross-line2'></div>
+                             <div class='cross-line-t'></div>
+                        </div>
+                         <div class='logo-mobile-burger'>
+                             <h4 class='FontWhite'>Silver Act'</h4>
+                            <img src='Header/img/Logowhite.png'/>
+                         </div>
+                         <div class='content-burger'>
+                             <h4 class='FontBlack'>Les expériences</h4>
+                              <h4 class='FontBlack'>Les Box</h4>
+                              <h4 class='FontBlack'>Connexion</h4>
+                              <h4 class='FontBlack'>Inscription</h4>   <h4 class='FontBlack'>Les expériences</h4> 
+                         </div>
+                    </div>
+                   </div>
+               </div>
+           </header>
+            <section>
+            <div class='container background-black'>
+            <div class='grid'>
+                        <div class='bg-blue'></div>
+                         <div class="videoheader">
+                       <video muted autoplay="true" loop="true" audio='mute'  src='Header/video/silveract.mp4'>
+                        </video>
+                         </div>
+                    <div class='content'>
+                        <div class='wrapper'>
+                     <h2 class='FontWhite'>Parce que notre quotidien, c’est d’animer le votre !</h2>
+                     <p class='pWhite20'>Vos proches s'ennuient, ça tombe bien !<br/> Nous sommes là pour leur proposer des expériences uniques et inoubliables .</p>
+                     <h4 class='FontWhite'>Silver Act' des activités pour seniors.</h4>
+                        </div>
+                     <div class='wrapper'>
+                            <h4 class='FontWhite red-btn'>RÉSERVER VOTRE EXPÉRIENCE</h4>
+                       </div>
+                </div>
+            </div>
+          </div>
+    </section>
+            
+              <div class='flex-search-box'>
+               <div class='container'>
+                <div class='grid'>
+                  <div id='search-box'>
+                   
+                    <div class='check-in'>
+                          <h4 class='FontBlack selected'>Réservez votre expérience</h4>
+                          <img src='Header/img/icons/search_icon.png'/>
+                          <div class='tog'>
+                             <ul>
+                                 <li class='item'><p class='pWhite20-m'>Natation</p></li>
+                                 <li class='item'><p class='pWhite20-m'>Découverte du web</p></li>
+                                 <li class='item'><p class='pWhite20-m'>Science de la vie</p></li>
+                                 <li class='item'><p class='pWhite20-m'>Découverte de la VR</p></li>
+                                 <li class='item'><p class='pWhite20-m'>Balade en Forêt</p></li>
+                                 <li class='item'><p class='pWhite20-m'>Visite musée</p></li>
+                             </ul>
+                          </div>
+                    </div>
+                    
+                    <div class='bordure'>
+                    <h4 class='FontBlack'>Quand ?</h4>
+                    <input type='text' id='datepicker' class='ui-datepicker-header .ui-widget'>
+                    <img src='Header/js/images/calendar_icon.png' id='datepickerImage' class='selector'/>
+                    </div>
+                    
+                    <div class='check-out'>
+                        <h4 class='FontWhite'>RÉSERVER</h4>
+                    </div>
+                    
+                  </div>
+                </div>
+                </div>
+                </div>
+    
+    
+    
+    
+    
+    
+    
      <section>
                 
               <div class='container'>
                     <div class='grid'>
                         <div class='header subtitle col-12 s-col-11 s-emptyl-col-1'>
-                     <h3 class='FontBlack'>L'experience du mois</h3>
+                     <h4 class='FontBlack'>L'experience du mois</h4>
                         </div>
                     </div>
               </div>
@@ -43,7 +153,7 @@
        
         <section class="container">
         <div class='grid'>
-            <div class='sub-header col-12 s-col-10 s-emptyr-col-1 s-emptyl-col-1'>
+            <div class='sub-header col-12 s-col-10 s-emptyr-col-1 s-emptyl-col-1 subtitle'>
                 <h4 class='FontBlack'>Les expériences inoubliables</h4>
             </div>
 
@@ -88,7 +198,7 @@
     </section>
     
         <section class="container">
-        <div class="grid">
+        <div class="grid subtitle">
 
             <div class="inbox col-6 s-col-10 s-emptyr-col-1 s-emptyl-col-1">
                 <h3> La box pour toutes <br/> les occasions !</h3>
@@ -103,6 +213,8 @@
 
         </div>
     </section>
-    
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src='Header/js/jquery-ui.js'></script>
+            <script src='Header/search.js'></script>
 </body>
 </html>

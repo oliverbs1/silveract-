@@ -15,10 +15,16 @@ $(document).ready(function() {
     $('.icon-burger').click(function(){
         $('#menu-hamburger').toggle("slide");
         console.log('menu open');
+        $('body').css({
+            'overflow':'hidden'
+        })
     }); 
     
     $('.cross-line,.cross-line2,.cross-line-t').click(function(){
         $('#menu-hamburger').toggle("slide");
-        console.log('menu close')
+        console.log('menu close');
+        $('body').css({
+            'overflow' : 'scroll'
+        })
     })
 });
