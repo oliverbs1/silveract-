@@ -1,0 +1,57 @@
+/*réglage block general*/
+
+.Content-vid{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* réglage block image */
+
+.img-content{
+    width: 50%;
+    background-image: url(denzel-washington-american-gangster.png);
+    background-position: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*réglage texte*/
+
+.croptext {
+    width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+	flex-wrap: wrap;
+}
+
+.content-croptext{
+    width: 90%;
+}
+
+.croptext h3 {
+	color: #E55458;
+}
+
+.croptext p {
+	margin-top: 24px;
+}
+
+/*Media queri*/
+
+@media all and (max-width: 750px) {
+
+    .croptext {
+			display: none;
+    }
+    
+    .img-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+   
+}

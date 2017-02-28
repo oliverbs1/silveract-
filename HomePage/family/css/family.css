@@ -1,3 +1,5 @@
+
+
 /*Réglage full-width*/
 
 .team{
@@ -21,7 +23,6 @@
 
 .white-box{
     width: 35%;
-    height: 341px;
     background-color: #fff;
     display: flex;
     flex-flow: column;
@@ -64,16 +65,12 @@
     
     .white-box{
     width: 90%;
-    height: 341px;
     margin: 0 auto;
-    background-color: #fff;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     padding: 16px;
-    box-sizing: border-box;
-    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+    box-shadow: none;
 }
     
     .red-box{
