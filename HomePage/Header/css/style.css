@@ -67,35 +67,21 @@ header {
     position: relative;
 }
 
-
-/*
-@media all and(min-width: 1280px){
-    .resp{
-    width: 100%;
-    height: 72px;
-    background: #E55155;
-    overflow: hidden;
-    z-index: 1000;
-    position: relative;
-    }
-}
-*/
-
-.logo{
+.logo-web{
     align-items: center;
     margin-left: 24px;
     float: left;
     margin-top: 12px;
 }
 
-.logo img{
+.logo-web img{
     width: 50px;
     height: 50px;
     cursor: pointer;
     float: left;
 }
 
-.logo h3{
+.logo-web h3{
     height: 72px;
     margin-left: 24px;
     cursor: pointer;
@@ -107,6 +93,7 @@ header {
     overflow: hidden;
     float: right;
     display: inline;
+    margin-top: 4px;
 }
 
 .navi h4{
@@ -144,6 +131,7 @@ video{
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* Texte */
@@ -158,15 +146,7 @@ video{
     padding-top: 100px;
 }
 
-@media all and (max-width: 750px){
-.red-btn{
-    background: #E55155;
-    margin-top: 50px;
-    padding: 16px;
-    cursor: pointer;
-    border-radius: 3px;
-    }  
-}
+
 
 /* barre de reservation */
 
@@ -264,120 +244,229 @@ video{
         display: none;
     }
     
-    .logo-resp{
+    .logo-mobile{
         display: none;
     }
     
-    .burger-menu{
+    .logo-mobile img{
         display: none;
     }
     
-    .barre{
+    .logo-mobile h3{
+        display: none;
+    }
+    
+    .logo-mobile-burger{
+        display: none;
+    }
+    
+    .logo-mobile-burger h4{
+        display: none;
+    }
+    
+    .logo-mobile-burger img{
         display: none;
     }
     
     
 }
 
+@media all and (max-width: 750px){
 
-@media all and (max-width:750px){
-
-    /* élément qui disparaissent */
+/* élément qui disparaissent */
 
     #search-box{
-        display: none;
-    }
-    
-    
-    .nav-web{
         display: none;
     }
     
     .navi{
         display: none;
     }
-    
-    .logo{
+    .logo-web{
         display: none;
     }
-
-    /* menu burger et barre de nav mobile */
     
-    .nav-resp{
-    height: 72px;
-    display: flex;
-    overflow: hidden;
-    z-index: 1000;
+    video{
+        display: none;
+    }
+    
+    
+/* Barre de nav */
+    
+/* bg rouge */
+    
+    .nav-web {
     position: fixed;
-    }
-    
-    .logo-resp{
-        margin-top: 3px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .logo-resp img{
-        width: 64px;
-        height: 64px;
-    }
-    
-    .barre{
-    cursor: pointer;
-    width: 100%;
+    z-index: 10000;
     height: 100%;
-        position: fixed;
-    }
-    .burger-menu{
-        background: #E55155;
-        min-height: 100%;
-        max-height: 100%;
-        width: 80%;
-        display: flex;
-        flex-flow: column wrap;
     }
     
-    .burger-header{
-        height: 100px;
-        background: #fff;
+    header {
+    width: 100%;
+    }
+
+
+    
+    .resp {
+    width: 750px;
+    height: 72px;
+    background: #E55155;
+    overflow: hidden;
+    z-index: 10000000000000000 !important;
+    position: relative;
+    }
+
+/* config logo header-mobile */
+    
+    .logo-mobile{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
+        transform: translateY(25%); 
+        margin-right: 30px;
     }
     
+    .logo-mobile img{
+        width: 50px;
+        height: 50px;
+    }
     
-    .burger-header h3{
+    .logo-mobile h4{
         display: flex;
         align-items: center;
-        justify-content: center;
+        margin-right: 10px;
     }
     
-    .burger-arrow{
-        background-image: url(../img/icons/ic_arrow_back_black_24dp_1x.png) no-repeat;
-        width: 24px;
-        height: 24px;
-        background-position: cover;
-        background-size: 100% 100%;
-    }
+/* icon burger */
     
-    
-    .burger-silver-logo{
-        width: 64px;
-        height: 64px;
-    }
-    
-    .burger-body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .burger-body h4{
-        margin-top: 40px;
-    }
-    
-    .active{
+    .icon-burger{
+        width: 20px;
+        height: inherit;
+        height: 20px;
         position: absolute;
-        background: rgba(0,0,0,0.3);
-    } 
+        margin-left: 15px;
+        transform: translateY(-110%);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    
+    .string{
+        width: 20px;
+        height: 3px;
+        background: #fff;
+    }
+    
+    .string1{
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        margin-top: 3px;
+    }
+    
+    .string2{
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        margin-top: 3px;
+    }
+
+/* button reservation */
+
+.red-btn{
+    background: #E55155;
+    margin-top: 50px;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+/* Texte */
+    
+    .background-black{
+    position: relative;
+    }
+
+
+    .videoheader{
+    height: 528px;
+    overflow: hidden;
+    position: relative;
+    }
+    
+    .content{
+        text-align: center;
+        padding-top: 60px;
+        background: grey;
+    }
+    
+    /* menu burger */
+    
+    #menu-hamburger{
+        background: #fff;
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        flex-wrap: wrap;
+        z-index: 1000000000000000000;
+    }
+    
+/* icone de fermeture du burger */
+    
+    .cross{
+        width: 100%;
+        height: 20px;
+        background: #E55155;
+        padding-top: 20px;
+    }    
+    
+    .cross-line{
+       background: #fff;
+        height: 3px;
+        width: 20px;
+        -webkit-transform: rotate(-45deg);
+        margin-left: 90%;
+    }
+    
+    .cross-line2{
+        background: #fff;
+        width: 20px;
+        height: 3px;
+        -webkit-transform: rotate(45deg);
+        margin-left: 90%;
+    }
+    
+    .cross-line-t{
+        background: transparent;
+        width: 20px;
+        height: 20px;
+        margin-left: 90%;
+    }
+
+/* logo burger */
+    
+    .logo-mobile-burger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 72px;
+        /*background: #E55155;*/
+        background: #E55155;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    
+    .logo-mobile-burger img{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .logo-mobile-burger h4{
+        padding-right: 10px;
+    }
+    
+    
 }

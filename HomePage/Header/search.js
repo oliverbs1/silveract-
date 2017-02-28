@@ -10,10 +10,15 @@ $(document).ready(function() {
   $(".item").click(function() {
   $("h4.selected").text($(this).text());
 });
+    $('#menu-hamburger').hide();
     
-    $('.barre').click(function(){
-        $('.burger-menu').toggle("slide");
-        $('.logo-resp').toggle();
-        $('section').toggleClass("active");
-    });  
+    $('.icon-burger').click(function(){
+        $('#menu-hamburger').toggle("slide");
+        console.log('menu open');
+    }); 
+    
+    $('.cross-line,.cross-line2,.cross-line-t').click(function(){
+        $('#menu-hamburger').toggle("slide");
+        console.log('menu close')
+    })
 });
