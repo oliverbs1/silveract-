@@ -1,470 +1,373 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /* Header menu navigation responsive web */
 
 header {
-    width: 100%;
+	width: 100%;
 }
 
 .nav-web {
-    position: fixed;
-    z-index: 10000;
+	position: fixed;
+	z-index: 10000;
 }
 
-.resp{
-    width: 1280px;
-    height: 72px;
-    background: #E55155;
-    overflow: hidden;
-    z-index: 10000000000000000 !important;
-    position: relative;
+.resp {
+	width: 1280px;
+	height: 72px;
+	background: #E55155;
+	overflow: hidden;
+	z-index: 10000000000000000 !important;
+	position: relative;
 }
 
-.logo-web{
-    align-items: center;
-    margin-left: 24px;
-    float: left;
-    margin-top: 12px;
+.logo-web {
+	align-items: center;
+	margin-left: 24px;
+	float: left;
+	margin-top: 12px;
 }
 
-.logo-web img{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    float: left;
+.logo-web img {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	float: left;
 }
 
-.logo-web h3{
-    height: 72px;
-    margin-left: 24px;
-    cursor: pointer;
-    transform: translateY(19%);
-    float: left;
+.logo-web h3 {
+	height: 72px;
+	margin-left: 24px;
+	cursor: pointer;
+	transform: translateY(19%);
+	float: left;
 }
 
-.navi{
-    overflow: hidden;
-    float: right;
-    display: inline;
-    margin-top: 4px;
+.navi {
+	overflow: hidden;
+	float: right;
+	display: inline;
+	margin-top: 4px;
 }
 
-.navi h4{
-    margin: 24px;
-    cursor: pointer;
-    float: left;
+.navi h4 {
+	margin: 24px;
+	cursor: pointer;
+	float: left;
 }
 
 
 /* video */
 
-.content-height{
-    height: 528px;
-    overflow: hidden;
-    position: relative;
+.content-height {
+	height: 528px;
+	overflow: hidden;
+	position: relative;
 }
 
 
 /* image */
 
-.content{
-  width: 100%;
-  margin: 0 auto;
-  background: rgba(0,0,0,0.4);
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.content {
+	width: 100%;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
+
 
 /* Texte */
 
-.content h2{
-    margin-bottom: 20px;
+.content h2 {
+	margin-bottom: 20px;
 }
 
-.content h4{
-    margin-top: 100Px;
+.content h4 {
+	margin-top: 100Px;
 }
-
 
 
 /* barre de reservation */
 
-.flex-search-box{
-    display: flex;
-    justify-content: center;
+.flex-search-box {
+	display: flex;
+	justify-content: center;
 }
 
-#search-box{
-    align-items: center;
-    display: flex;
-    height: 64px;
-    width: 960px;
-    box-sizing: border-box;
-    box-shadow: 0 8px 18px 0px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    z-index: 100;
+#search-box {
+	align-items: center;
+	display: flex;
+	height: 64px;
+	width: 960px;
+	box-sizing: border-box;
+	box-shadow: 0 8px 18px 0px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	z-index: 100;
 }
 
-#ui-datepicker-div{
-    z-index: 100000 !important;
+#ui-datepicker-div {
+	z-index: 100000 !important;
 }
-
 
 
 /* choix animation */
 
-.check-in{
-    width: 400px;
-    display: flex;
-    padding: 16px;
-    cursor: pointer;
-    border-right: solid 1px grey;
+.check-in {
+	width: 400px;
+	display: flex;
+	padding: 16px;
+	cursor: pointer;
+	border-right: solid 1px grey;
 }
 
-.check-in img{
-    padding-left: 30px;
+.check-in img {
+	padding-left: 30px;
 }
 
-.tog{
-    position: absolute;
-    bottom: 100px;
-    cursor: pointer;
-    background: #E55155;
-    padding: 16px;
-    border-radius: 5px;
+.tog {
+	position: absolute;
+	bottom: 100px;
+	cursor: pointer;
+	background: #E55155;
+	padding: 16px;
+	border-radius: 5px;
 }
+
 
 /* calendar */
 
-.bordure{
-    width: 360px;
-    display: flex;
-    padding-left: 24px;
-    padding-right: 16px;
-    padding-left: 16px;
+.bordure {
+	width: 360px;
+	display: flex;
+	padding-left: 24px;
+	padding-right: 16px;
+	padding-left: 16px;
 }
 
-.bordure img{
-    padding-left: 90px;
+.bordure img {
+	padding-left: 90px;
 }
 
-#datepicker{
-    cursor: pointer;
-    margin-left: 10px;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 10px;
-    z-index: 1005;
+#datepicker {
+	cursor: pointer;
+	margin-left: 10px;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	z-index: 1005;
 }
 
-#datepickerImage{
-    cursor: pointer;
+#datepickerImage {
+	cursor: pointer;
 }
+
 
 /* boutton resa */
 
-.check-out{
-    width: 200px;
-    background-color: #E55155;
-    height: 64px;
-    cursor: pointer;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.check-out {
+	width: 200px;
+	background-color: #E55155;
+	height: 64px;
+	cursor: pointer;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-
-
-@media all and (min-width: 750px){
-    .red-btn{
-        display: none;
-    }
-    
-    .logo-mobile{
-        display: none;
-    }
-    
-    .logo-mobile img{
-        display: none;
-    }
-    
-    .logo-mobile h3{
-        display: none;
-    }
-    
-    .logo-mobile-burger{
-        display: none;
-    }
-    
-    .logo-mobile-burger h4{
-        display: none;
-    }
-    
-    .logo-mobile-burger img{
-        display: none;
-    }
-    
-    
+@media all and (min-width: 750px) {
+	.red-btn {
+		display: none;
+	}
+	.logo-mobile {
+		display: none;
+	}
+	.logo-mobile img {
+		display: none;
+	}
+	.logo-mobile h3 {
+		display: none;
+	}
+	.logo-mobile-burger {
+		display: none;
+	}
+	.logo-mobile-burger h4 {
+		display: none;
+	}
+	.logo-mobile-burger img {
+		display: none;
+	}
 }
 
-@media all and (max-width: 750px){
-
-/* élément qui disparaissent */
-
-    #search-box{
-        display: none;
-    }
-    
-    .navi{
-        display: none;
-    }
-    .logo-web{
-        display: none;
-    }
-    
-    video{
-        display: none;
-    }
-    
-    .videoheader{
-        display: none;
-    }
-    
-    
-/* Barre de nav */
-    
-/* bg rouge */
-    
-    .nav-web {
-    position: fixed;
-    z-index: 10000;
-    height: 100%;
-    }
-    
-    header {
-    width: 100%;
-    }
-
-
-    
-    .resp {
-    width: 750px;
-    height: 72px;
-    background: #E55155;
-    overflow: hidden;
-    z-index: 10000000000000000 !important;
-    position: relative;
-    }
-
-/* config logo header-mobile */
-    
-    .logo-mobile{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        transform: translateY(25%); 
-        margin-right: 30px;
-    }
-    
-    .logo-mobile img{
-        width: 120px;
-        height: 50px;
-    }
-    
-    .logo-mobile h4{
-        display: flex;
-        align-items: center;
-        margin-right: 10px;
-    }
-    
-/* icon burger */
-    
-    .icon-burger{
-        width: 20px;
-        height: inherit;
-        height: 20px;
-        position: absolute;
-        margin-left: 15px;
-        transform: translateY(-110%);
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        cursor: pointer;
-    }
-    
-    .string{
-        width: 20px;
-        height: 3px;
-        background: #fff;
-    }
-    
-    .string1{
-        width: 20px;
-        height: 3px;
-        background: #fff;
-        margin-top: 3px;
-    }
-    
-    .string2{
-        width: 20px;
-        height: 3px;
-        background: #fff;
-        margin-top: 3px;
-    }
-
-/* button reservation */
-
-.red-btn{
-    width: 90%;
-    margin: 0 auto;
-    background: #E55155;
-    padding: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    }
-    
-/* Texte */
-
-    .content-height{
-        width: 100%;
-        height: 528px;
-        background-image: url(../img/American-Gangster_Schedule_700x384.jpg);
-        background-position: cover;
-        background-size: 100% 100%;
-    }
-    
-    .content{
-        width: 80%;
-        padding: 50px;
-        padding-top: 110px;
-    }
-    
-    
-    .wrapper{
-        width:  80%;
-        margin: 0 auto;
-        position: relative;
-    }
-    
-    /* menu burger */
-    
-    #menu-hamburger{
-        background: #fff;
-        width: 80%;
-        height: 100%;
-        position: absolute;
-        overflow: scroll;
-        flex-wrap: wrap;
-        z-index: 1000000000000000000;
-    }
-    
-/* icone de fermeture du burger */
-    
-    .cross{
-        width: 100%;
-        height: 20px;
-        background: #E55155;
-        padding-top: 20px;
-        cursor: pointer;
-    }    
-    
-    .cross-line{
-       background: #fff;
-        height: 3px;
-        width: 20px;
-        -webkit-transform: rotate(-45deg);
-        margin-left: 90%;
-    }
-    
-    .cross-line2{
-        background: #fff;
-        width: 20px;
-        height: 3px;
-        -webkit-transform: rotate(45deg);
-        margin-left: 90%;
-    }
-    
-    .cross-line-t{
-        background: transparent;
-        width: 20px;
-        height: 20px;
-        margin-left: 90%;
-    }
-
-/* logo burger */
-    
-    .logo-mobile-burger{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 72px;
-        background: #E55155;
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    
-    .logo-mobile-burger img{
-        width: 45px;
-        height: 45px;
-    }
-    
-    .logo-mobile-burger h4{
-        padding-right: 10px;
-    }
-    
-    
+@media all and (max-width: 750px) {
+	/* élément qui disparaissent */
+	#search-box {
+		display: none;
+	}
+	.navi {
+		display: none;
+	}
+	.logo-web {
+		display: none;
+	}
+	video {
+		display: none;
+	}
+	.videoheader {
+		display: none;
+	}
+	/* Barre de nav */
+	/* bg rouge */
+	.nav-web {
+		position: fixed;
+		z-index: 10000;
+		height: 100%;
+	}
+	header {
+		width: 100%;
+	}
+	.resp {
+		width: 750px;
+		height: 72px;
+		background: #E55155;
+		overflow: hidden;
+		z-index: 10000000000000000 !important;
+		position: relative;
+	}
+	/* config logo header-mobile */
+	.logo-mobile {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		transform: translateY(25%);
+		margin-right: 30px;
+	}
+	.logo-mobile img {
+		width: 120px;
+		height: 50px;
+	}
+	.logo-mobile h4 {
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+	}
+	/* icon burger */
+	.icon-burger {
+		width: 20px;
+		height: inherit;
+		height: 20px;
+		position: absolute;
+		margin-left: 15px;
+		transform: translateY(-110%);
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		cursor: pointer;
+	}
+	.string {
+		width: 20px;
+		height: 3px;
+		background: #fff;
+	}
+	.string1 {
+		width: 20px;
+		height: 3px;
+		background: #fff;
+		margin-top: 3px;
+	}
+	.string2 {
+		width: 20px;
+		height: 3px;
+		background: #fff;
+		margin-top: 3px;
+	}
+	/* button reservation */
+	.red-btn {
+		width: 90%;
+		margin: 0 auto;
+		background: #E55155;
+		padding: 10px;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+	/* Texte */
+	.content-height {
+		width: 100%;
+		height: 528px;
+		background-image: url(../img/American-Gangster_Schedule_700x384.jpg);
+		background-position: cover;
+		background-size: 100% 100%;
+	}
+	.content {
+		width: 80%;
+		padding: 50px;
+		padding-top: 110px;
+	}
+	.wrapper {
+		width: 80%;
+		margin: 0 auto;
+		position: relative;
+	}
+	/* menu burger */
+	#menu-hamburger {
+		background: #fff;
+		width: 80%;
+		height: 100%;
+		position: absolute;
+		overflow: scroll;
+		flex-wrap: wrap;
+		z-index: 1000000000000000000;
+	}
+	/* icone de fermeture du burger */
+	.cross {
+		width: 100%;
+		height: 20px;
+		background: #E55155;
+		padding-top: 20px;
+		cursor: pointer;
+	}
+	.cross-line {
+		background: #fff;
+		height: 3px;
+		width: 20px;
+		-webkit-transform: rotate(-45deg);
+		margin-left: 90%;
+	}
+	.cross-line2 {
+		background: #fff;
+		width: 20px;
+		height: 3px;
+		-webkit-transform: rotate(45deg);
+		margin-left: 90%;
+	}
+	.cross-line-t {
+		background: transparent;
+		width: 20px;
+		height: 20px;
+		margin-left: 90%;
+	}
+	/* logo burger */
+	.logo-mobile-burger {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 72px;
+		background: #E55155;
+		width: 100%;
+		padding-bottom: 40px;
+	}
+	.logo-mobile-burger img {
+		width: 45px;
+		height: 45px;
+	}
+	.logo-mobile-burger h4 {
+		padding-right: 10px;
+	}
 }

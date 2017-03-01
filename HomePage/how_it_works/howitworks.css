@@ -1,32 +1,33 @@
 /* réglage block */
 
-.content-old{
-    width: 90%;
-    height: 300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.content-old {
+	width: 90%;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 
 /*réglage taille image*/
 
 .inboxhiw {
-    width: 60%;
-    height: 300px;
-    background-image: url(howitworks.jpg);
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+	width: 60%;
+	height: 300px;
+	background-image: url(howitworks.jpg);
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
+
 
 /*réglage texte*/
 
 .texthiw {
-    width: 30%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+	width: 30%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
 }
 
 .texthiw h3 {
@@ -41,14 +42,11 @@
 /*Media query*/
 
 @media all and (max-width: 750px) {
-
-    .inboxhiw {
-        display: none;
-    }
-    
-    .texthiw{
-        width: 90%;
-        margin: 0 auto;
-    }
-
+	.inboxhiw {
+		display: none;
+	}
+	.texthiw {
+		width: 90%;
+		margin: 0 auto;
+	}
 }
