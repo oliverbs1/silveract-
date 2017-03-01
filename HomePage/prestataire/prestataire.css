@@ -1,88 +1,104 @@
-/*réglage header*/
+/* presta-wrapper-content */
 
-.sub-header {
-	display: flex;
-	align-items: flex-start;
-	align-content: center;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-    padding-bottom: 48px;
-}
-
-
-/* réglage sous block */
-
-.sub-container {
+.presta-wrapper{
+   margin: 0 auto;
+    width: 90%;
+    position: relative;
     display: flex;
-    margin-left: 56px;
-}
-
-.sub-container div {
-    display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
+/* presta-card */
 
-/* réglage cartes et images */
-
-.Presta-Card img {
-    width: 100%;
-}
-
-.box-shadow {
-    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-.Presta-Card {
-    width: calc(auto);
-    background: #fff;
+.content-card-presta{
+    width: 30%;
+    height: 250px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
     box-sizing: border-box;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+/* presta-img*/
+
+.img-presta{
+    width: 100%;
+    height: 150px;
+}
+
+.img-presta img{
+    width: 100%;
+    height: 150px;
+}
+
+/* title presta */
+
+.title-presta{
+    width: 100%;
+    height: 40px;
     display: flex;
-    flex-direction: column;
 }
 
+.members{
+    width: 50%;
+    margin-top: 16px;
+    padding-left: 10px;
+}
 
-/* réglage texte */
+.note{
+    width: 30%;
+}
 
-.top {
+.advice{
+    width: 20%;
+    text-align: right;
+    margin-top: 16px;
+    padding-right: 10px;
+}
+
+.stars{
+    color: #E55155;
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    padding-top: 16px;
+    margin-top: 8px;
 }
 
-.red-star {
-    display: flex;
+/* description-presta*/
+
+.descript-presta{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding-left: 10px;
 }
 
-@media screen and (max-width: 1140px) {
-  .red-star {
-    margin-left: 0px;
-  }
+
+@media all and (max-width: 900px){
+     .content-card-presta:nth-of-type(3){
+        display: none;
+    }
+     .content-card-presta:nth-of-type(2){
+        width: 45%;
+    }
+    
+    
+    .content-card-presta:nth-of-type(1){
+        width: 45%;
+    }
 }
 
-.red-font {
-    color: #e55155;
+@media all and (max-width: 750px){
+    .content-card-presta:nth-of-type(3){
+        display: none;
+    }
+     .content-card-presta:nth-of-type(2){
+        display: none;
+    }
+    
+    
+    .content-card-presta:nth-of-type(1){
+        width: 100%;
+    }
 }
-
-.pRed14 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 400;
-    color: #e55155;
-}
-
-.line {
-	display: flex;
-}
-
-/* #########suppression des deux cartes apres le reponsive ######### */
-
-@media screen and (max-width: 750px) {
-  .shadow {
-    display: none;
-  }
-}
-
 

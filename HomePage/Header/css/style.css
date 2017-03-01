@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* Header menu navigation responsive web */
 
 header {
@@ -56,25 +105,18 @@ header {
 
 /* video */
 
-.background-black{
-    position: relative;
-}
-
-
-.videoheader{
+.content-height{
     height: 528px;
     overflow: hidden;
     position: relative;
-}
-
-video{
-    z-index: 1000;
 }
 
 
 /* image */
 
 .content{
+  width: 100%;
+  margin: 0 auto;
   background: rgba(0,0,0,0.4);
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
@@ -86,8 +128,6 @@ video{
 }
 
 /* Texte */
-
-
 
 .content h2{
     margin-bottom: 20px;
@@ -240,6 +280,10 @@ video{
         display: none;
     }
     
+    .videoheader{
+        display: none;
+    }
+    
     
 /* Barre de nav */
     
@@ -277,7 +321,7 @@ video{
     }
     
     .logo-mobile img{
-        width: 50px;
+        width: 120px;
         height: 50px;
     }
     
@@ -325,41 +369,28 @@ video{
 /* button reservation */
 
 .red-btn{
+    width: 90%;
+    margin: 0 auto;
     background: #E55155;
-    margin-top: 50px;
-    padding: 16px;  
+    padding: 10px;
     border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     }
     
 /* Texte */
-    
-    .background-black{
-    position: relative;
-    }
 
-
-    .videoheader{
-    display: none;
-    }
-    
-    .bg-blue{
-        height: 528px;
-        overflow: hidden;
-        position: relative;
-        background: grey;
-    }
-    
-    .content{
+    .content-height{
         width: 100%;
+        height: 528px;
         background-image: url(../img/American-Gangster_Schedule_700x384.jpg);
         background-position: cover;
         background-size: 100% 100%;
-        background-repeat: no-repeat;
-        margin-top: 60px;
+    }
+    
+    .content{
+        width: 80%;
+        padding: 50px;
+        padding-top: 110px;
     }
     
     
@@ -421,7 +452,6 @@ video{
         justify-content: center;
         align-items: center;
         height: 72px;
-        /*background: #E55155;*/
         background: #E55155;
         width: 100%;
         padding-bottom: 40px;

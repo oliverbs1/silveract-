@@ -20,7 +20,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
-            <!-- MENU NAV -->
+           <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type="text/css" href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/font.css'>
+    <link rel='stylesheet' type="text/css" href='css/grille.css'>
+    <link rel='stylesheet' type="text/css" href="css/jquery-ui.css">
+</head>
+<body>
+        <!-- MENU NAV -->
            <header class='nav-web'>
                <div class='container'>
                    <div class='grid'>
@@ -30,8 +42,7 @@
                               <h3 class='FontWhite'>Silver Act'</h3>
                         </div>
                         <div class='logo-mobile'>
-                            <h4 class='FontWhite'>Silver Act'</h4>
-                            <img src='Header/img/Logowhite.png'/>
+                            <img src='Header/img/LogoSilverActMobile.png'/>
                         </div>
                         <div class='icon-burger'>
                             <div class='string'></div>
@@ -66,32 +77,28 @@
                </div>
            </header>
             <section>
-            <div class='container background-black'>
-            <div class='grid'>
-                        <div class='bg-blue'></div>
+            <div class='container'>
+                        <div class='content-height'>
                          <div class="videoheader">
-                       <video muted autoplay="true" loop="true" audio='mute'  src='Header/video/silveract.mp4'>
+                       <video muted autoplay="true" loop="true" audio='mute'  src="Header/video/silveract.mp4">
                         </video>
                          </div>
                     <div class='content'>
-                        <div class='wrapper'>
+                        <div class='content-text'>
                      <h2 class='FontWhite'>Parce que notre quotidien, c’est d’animer le votre !</h2>
                      <p class='pWhite20'>Vos proches s'ennuient, ça tombe bien !<br/> Nous sommes là pour leur proposer des expériences uniques et inoubliables .</p>
                      <h4 class='FontWhite'>Silver Act' des activités pour seniors.</h4>
-                        </div>
-                     <div class='wrapper'>
-                            <h4 class='FontWhite red-btn'>RÉSERVER VOTRE EXPÉRIENCE</h4>
-                       </div>
-                </div>
+                     <h4 class='FontWhite red-btn'>RÉSERVER VOTRE EXPÉRIENCE</h4>
             </div>
+           </div>
+           </div>
           </div>
     </section>
             
+            <section>
               <div class='flex-search-box'>
                <div class='container'>
-                <div class='grid'>
                   <div id='search-box'>
-                   
                     <div class='check-in'>
                           <h4 class='FontBlack selected'>Réservez votre expérience</h4>
                           <img src='Header/img/icons/search_icon.png'/>
@@ -120,8 +127,7 @@
                   </div>
                 </div>
                 </div>
-                </div>
-    
+            </section>
     
     
     <section>
@@ -249,53 +255,98 @@
                   </div>
        </section>
        
-        <section class="container">
-        <div class='grid'>
-            <div class='sub-header col-12 s-col-10 s-emptyr-col-1 s-emptyl-col-1 subtitle'>
-                <h4 class='FontBlack'>Les expériences inoubliables</h4>
-            </div>
-
-            <div class='Presta-Card col-4 s-col-10 s-emptyr-col-1 s-emptyl-col-1'>
-                <img src='prestataire/prestaraire.jpg' class='box-shadow' />
-                <div class='top'>
-                    <p class='pBlack14'>Membre depuis janvier 2017</p>
-                    <div class='red-star'>
-                        <i class="material-icons red-font">star</i><i class="material-icons red-font">star</i><i class="material-icons red-font">star</i><i class="material-icons red-font">star_half</i><i class="material-icons red-font">star_border</i>
+    <section>
+        <div class='container'>
+           <div class='subtitle'>
+               <h3 class='FontBlack'>Les experiences inoubliables</h3>
+           </div>
+            <div class='presta-wrapper'>
+                <div class='content-card-presta'>
+                    <div class='img-presta'>
+                    <img src='prestataire/bettsie.png'/>
                     </div>
-                    <p class='pRed14'>32 avis</p>
-                </div>
-                    <p class='pBlack20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl et arcu interdum lacinia. Aenean sed imperdiet.</p>
-            </div>
-            <div class='Presta-Card shadow col-4 s-col-10 s-emptyr-col-1 s-emptyl-col-1'>
-                <img src='prestataire/prestaraire.jpg' class='box-shadow' />
-                <div class='top'>
-                    <p class='pBlack14'>Membre depuis janvier 2017</p>
-                    <div class='red-star'>
-                        <i class="material-icons red-font">star</i><i class="material-icons red-font">star</i><i class="material-icons red-font">star</i><i class="material-icons red-font">star_half</i><i class="material-icons red-font">star_border</i>
+                    <div class='title-presta'>
+                        <div class='members'>
+                        <p class='pBlack14'>Membre depuis janvier 2017</p>
+                        </div>
+                        <div class='note'>
+                        <span class="stars">
+                                <i class="material-icons md-18">star</i>
+                                <i class="material-icons md-18" >star</i>
+                                <i class="material-icons md-18">star</i>
+                                <i class="material-icons md-18" >star_half</i>
+                                <i class="material-icons md-18" >star_border</i>
+                        </span>
+                        </div>
+                        <div class='advice'>
+                            <p class='pRed14'>32 avis</p>
+                        </div>
                     </div>
-                    <p class='pRed14'>32 avis</p>
-                </div>
-                <div class='line'>
-                    <p class='pBlack20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl et arcu interdum lacinia. Aenean sed imperdiet.</p>
-                </div>
-            </div>
-            <div class='Presta-Card shadow col-4 s-col-10 s-emptyr-col-1 s-emptyl-col-1'>
-                <img src='prestataire/prestaraire.jpg' class='box-shadow' />
-                <div class='top'>
-                    <p class='pBlack14'>Membre depuis janvier 2017</p>
-                    <div class='red-star'>
-                        <i class="material-icons red-font">star</i><i class="material-icons red-font">star</i><i class="material-icons red-font">star</i><i class="material-icons red-font">star_half</i><i class="material-icons red-font">star_border</i>
+                    <div class='descript-presta'>
+                        <p class='pBlack14'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl et arcu interdum lacinia. Aenean sed imperdiet.
+                        </p>
                     </div>
-                        <p class='pRed14'>32 avis</p>
                 </div>
-                <div class='line'>
-                    <p class='pBlack20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl et arcu interdum lacinia. Aenean sed imperdiet.</p>
+                <div class='content-card-presta'>
+                    <div class='img-presta'>
+                        <img src='prestataire/aidan.png'/>
+                    </div>
+                    <div class='title-presta'>
+                        <div class='members'>
+                        <p class='pBlack14'>Membre depuis janvier 2017</p>
+                        </div>
+                        <div class='note'>
+                        <span class="stars">
+                                <i class="material-icons md-18">star</i>
+                                <i class="material-icons md-18" >star</i>
+                                <i class="material-icons md-18">star</i>
+                                <i class="material-icons md-18" >star_half</i>
+                                <i class="material-icons md-18" >star_border</i>
+                        </span>
+                        </div>
+                        <div class='advice'>
+                            <p class='pRed14'>32 avis</p>
+                        </div>
+                    </div>
+                    <div class='descript-presta'>
+                        <p class='pBlack14'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl et arcu interdum lacinia. Aenean sed imperdiet.
+                        </p>
+                    </div>
+                </div>
+                <div class='content-card-presta'>
+                    <div class='img-presta'>
+                        <img src='prestataire/sarah.png'/>
+                    </div>
+                    <div class='title-presta'>
+                        <div class='members'>
+                        <p class='pBlack14'>Membre depuis janvier 2017</p>
+                        </div>
+                        <div class='note'>
+                        <span class="stars">
+                                <i class="material-icons md-18">star</i>
+                                <i class="material-icons md-18" >star</i>
+                                <i class="material-icons md-18">star</i>
+                                <i class="material-icons md-18" >star_half</i>
+                                <i class="material-icons md-18" >star_border</i>
+                        </span>
+                        </div>
+                        <div class='advice'>
+                            <p class='pRed14'>32 avis</p>
+                        </div>
+                    </div>
+                    <div class='descript-presta'>
+                        <p class='pBlack14'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nisl et arcu interdum lacinia. Aenean sed imperdiet.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
-        <section class="container">
+    <section class="container">
         <div class='subtitle'></div>
         <div class="grid">
 
