@@ -1,4 +1,5 @@
 
+
 /* Header */
 
 .subtitle{
@@ -12,75 +13,87 @@
 /*PARENTS*/
 
 .mongo-bg{
+    width: 100%;
     height: 400px;
     background-image: url('montgolfiere.jpg');
-    background-size: auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
 }
 
-
-
-/* Texte */
-
-.inbox-1 {
+.inbox-montgolfiere{
+    width: 40%;
     display: flex;
-    width: auto;
-    padding: 32px;
-}
-
-.inbox-1 h4 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		flex-wrap: wrap;
-		color: #fff;
-        margin-left: 32px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*BOX*/
 
+.content-box{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .box{
+    width: 70%;
     background: #fff;
     border: border-box;
-    display: flex;
-    flex-flow: column wrap;
     padding: 16px;
-    flex-wrap: wrap;
 }
 
 .box p{
     margin-top: 10px;
 }
 
+
 .red-button{
- 	position: relative;
-	margin-left: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	width: 160px;
-	height: 34px;
+    width: 30%;
+    padding: 16px;
 	text-align: center;
-	vertical-align:middle;
-	margin-top: 30px;
 	background-color: #E55458;
 	box-sizing: border-box;
 	border-radius: 2px;
-	font-size: 1rem;
 	text-decoration: none;
-	color: #fff;
+    position: relative;
+    float: right;
+    margin-top: 20px;
 }
 
-@media all and (max-width: 758px){
-    .inbox{
-        margin-top: 20px;
+@media all and (max-width: 750px){
+    .mongo-bg{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
     }
+    
+    .inbox-montgolfiere{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .content-box{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
     .box{
-        margin-top: 20px;
+        width: 100%;
     }
+    
+.red-button{
+    width: 30%;
+    padding: 16px;
+	text-align: center;
+	background-color: #E55458;
+	box-sizing: border-box;
+	border-radius: 2px;
+	text-decoration: none;
+    position: relative;
+    float: right;
+    margin-top: 14px;
+}
 }
 
