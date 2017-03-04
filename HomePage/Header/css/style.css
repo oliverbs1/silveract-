@@ -204,6 +204,21 @@ header {
 	.logo-mobile-burger img {
 		display: none;
 	}
+    .footer-burger{
+        display: none;
+    }
+    .footer-burger p{
+        display: none;
+    }
+    .content-burger{
+        display: none;
+    }
+    .content-burger ul{
+        display: none;
+    }
+    .content-burger ul li{
+        display: none;
+    }
 }
 
 @media all and (max-width: 750px) {
@@ -243,33 +258,27 @@ header {
 	}
 	/* config logo header-mobile */
 	.logo-mobile {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		transform: translateY(25%);
-		margin-right: 30px;
+        width: 50%;
+        position: relative;
+        float: right;
+        padding-right: 60px;
 	}
 	.logo-mobile img {
 		width: 120px;
 		height: 50px;
-	}
-	.logo-mobile h4 {
-		display: flex;
-		align-items: center;
-		margin-right: 10px;
+        padding-top: 10px;
+
 	}
 	/* icon burger */
 	.icon-burger {
-		width: 20px;
-		height: inherit;
-		height: 20px;
+		width: 50%;
+		height: 100%;
 		position: absolute;
 		margin-left: 15px;
-		transform: translateY(-110%);
-		display: flex;
-		flex-flow: column;
-		justify-content: center;
 		cursor: pointer;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
 	}
 	.string {
 		width: 20px;
@@ -306,10 +315,13 @@ header {
 		background-size: 100% 100%;
 	}
 	.content {
-		width: 80%;
-		padding: 50px;
-		padding-top: 110px;
+		width: 100%;
+		padding-top: 70px;
 	}
+    .content-text{
+        width: 80%;
+        margin: 0 auto;
+    }
 	.wrapper {
 		width: 80%;
 		margin: 0 auto;
@@ -325,6 +337,27 @@ header {
 		flex-wrap: wrap;
 		z-index: 1000000000000000000;
 	}
+    
+    .content-burger{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    .content-burger ul{
+        display: flex;
+    }
+    .content-burger ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        cursor: pointer;
+    }
+    
+    .content-burger ul:hover{
+        color: #E55155;
+        -webkit-transition : 0.2s;
+    }
 	/* icone de fermeture du burger */
 	.cross {
 		width: 100%;
@@ -333,18 +366,10 @@ header {
 		padding-top: 20px;
 		cursor: pointer;
 	}
-	.cross-line {
-		background: #fff;
+	.cross i{
+        color: #fff;
 		height: 3px;
 		width: 20px;
-		-webkit-transform: rotate(-45deg);
-		margin-left: 90%;
-	}
-	.cross-line2 {
-		background: #fff;
-		width: 20px;
-		height: 3px;
-		-webkit-transform: rotate(45deg);
 		margin-left: 90%;
 	}
 	.cross-line-t {
@@ -364,10 +389,23 @@ header {
 		padding-bottom: 40px;
 	}
 	.logo-mobile-burger img {
-		width: 45px;
-		height: 45px;
+		width: 90px;
+		height: 80px;
+        padding-right: 16px;
 	}
 	.logo-mobile-burger h4 {
 		padding-right: 10px;
 	}
+    .footer-burger{
+        background: #E55155;
+        height: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-burger p{
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
 }

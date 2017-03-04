@@ -20,7 +20,7 @@ $(document).ready(function() {
         })
     }); 
     
-    $('.cross-line,.cross-line2,.cross-line-t').click(function(){
+    $('.cross,.cross-line-t').click(function(){
         $('#menu-hamburger').toggle("slide");
         console.log('menu close');
         $('body').css({
