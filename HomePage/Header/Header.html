@@ -8,109 +8,153 @@
     <link rel='stylesheet' type='text/css' href='css/font.css'>
     <link rel='stylesheet' type="text/css" href='css/grille.css'>
     <link rel='stylesheet' type="text/css" href="css/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-        <!-- MENU NAV -->
-           <header class='nav-web'>
-               <div class='container'>
-                   <div class='grid'>
-                     <div class='resp'>
-                        <div class='logo-web'>
-                              <img src='img/Logowhite.png'>
-                              <h3 class='FontWhite'>Silver Act'</h3>
-                        </div>
-                        <div class='logo-mobile'>
-                            <h4 class='FontWhite'>Silver Act'</h4>
-                            <img src='img/Logowhite.png'/>
-                        </div>
-                        <div class='icon-burger'>
-                            <div class='string'></div>
-                            <div class='string1'></div>
-                            <div class='string2'></div>
-                        </div>
-                        <nav class='navi'>
-                              <h4 class='FontWhite'>Les expériences</h4>
-                              <h4 class='FontWhite'>Les Box</h4>
-                              <h4 class='FontWhite'>Connexion</h4>
-                              <h4 class='FontWhite'>Inscription</h4>
-                        </nav>
+       <header class='nav-web'>
+		<div class='container'>
+			<div class='grid'>
+				<div class='resp'>
+					<div class='logo-web'>
+						<img src='Header/img/Logowhite.png'>
+						<h3 class='FontWhite'>Silver Act'</h3>
+					</div>
+					<div class='logo-mobile'><img src='Header/img/LogoSilverActMobile.png'></div>
+					<div class='icon-burger'>
+						<div class='string'></div>
+						<div class='string1'></div>
+						<div class='string2'></div>
+					</div>
+					<nav class='navi'>
+						<h4 class='FontWhite'>Les expériences</h4>
+						<h4 class='FontWhite'>Les Box</h4>
+						<h4 class='FontWhite'>Connexion</h4>
+						<h4 class='FontWhite'>Inscription</h4>
+					</nav>
+				</div>
+				<div id='menu-hamburger'>
+					<div class='cross'>
+						<i class="material-icons">close</i>
+						<div class='cross-line-t'></div>
+					</div>
+					<div class='logo-mobile-burger'>
+					<img src='Header/img/Logowhite.png'>
+					<h2 class='FontWhite'>Silver Act'</h2>
+					</div>
+				    <div class='footer-burger'>
+					<p class='pWhite20'>Connexion</p>
+					<p class='pWhite20'>Inscription</p>
                     </div>
-                    <div id='menu-hamburger'>
-                         <div class='cross'>
-                             <div class='cross-line'></div>
-                             <div class='cross-line2'></div>
-                             <div class='cross-line-t'></div>
-                        </div>
-                         <div class='logo-mobile-burger'>
-                             <h4 class='FontWhite'>Silver Act'</h4>
-                            <img src='img/Logowhite.png'/>
-                         </div>
-                         <div class='content-burger'>
-                             <h4 class='FontBlack'>Les expériences</h4>
-                              <h4 class='FontBlack'>Les Box</h4>
-                              <h4 class='FontBlack'>Connexion</h4>
-                              <h4 class='FontBlack'>Inscription</h4>   <h4 class='FontBlack'>Les expériences</h4> 
-                         </div>
-                    </div>
-                    <div class='bg-blue'></div>
-                   </div>
-               </div>
-           </header>
-            <section>
-            <div class='container'>
-                        <div class='content-height'>
-                         <div class="videoheader">
-                       <video muted autoplay="true" loop="true" audio='mute'  src="video/silveract.mp4">
-                        </video>
-                         </div>
-                    <div class='content'>
-                        <div class='content-text'>
-                     <h2 class='FontWhite'>Parce que notre quotidien, c’est d’animer le votre !</h2>
-                     <p class='pWhite20'>Vos proches s'ennuient, ça tombe bien !<br/> Nous sommes là pour leur proposer des expériences uniques et inoubliables .</p>
-                     <h4 class='FontWhite'>Silver Act' des activités pour seniors.</h4>
-                     <h4 class='FontWhite red-btn'>RÉSERVER VOTRE EXPÉRIENCE</h4>
-            </div>
-           </div>
-           </div>
-          </div>
-    </section>
-            
-            <section>
-              <div class='flex-search-box'>
-               <div class='container'>
-                <div class='grid'>
-                  <div id='search-box'>
-                   
-                    <div class='check-in'>
-                          <h4 class='FontBlack selected'>Réservez votre expérience</h4>
-                          <img src='img/icons/search_icon.png'/>
-                          <div class='tog'>
-                             <ul>
-                                 <li class='item'><p class='pWhite20-m'>Natation</p></li>
-                                 <li class='item'><p class='pWhite20-m'>Découverte du web</p></li>
-                                 <li class='item'><p class='pWhite20-m'>Science de la vie</p></li>
-                                 <li class='item'><p class='pWhite20-m'>Découverte de la VR</p></li>
-                                 <li class='item'><p class='pWhite20-m'>Balade en Forêt</p></li>
-                                 <li class='item'><p class='pWhite20-m'>Visite musée</p></li>
-                             </ul>
-                          </div>
-                    </div>
-                    
-                    <div class='bordure'>
-                    <h4 class='FontBlack'>Quand ?</h4>
-                    <input type='text' id='datepicker' class='ui-datepicker-header .ui-widget'>
-                    <img src='js/images/calendar_icon.png' id='datepickerImage' class='selector'/>
-                    </div>
-                    
-                    <div class='check-out'>
-                        <h4 class='FontWhite'>RÉSERVER</h4>
-                    </div>
-                    
-                  </div>
-                </div>
-                </div>
-                </div>
-            </section>
+					<div class='content-burger'>
+					<ul>
+					<li><i class="material-icons">people</i></li>
+					<li>
+						<h4>Expériences</h4>
+                        </li>
+                    </ul>
+                    <ul><li><i class="material-icons">people</i></li>
+                        <li>
+						<h4>Prestataires</h4>
+                        </li>
+                        </ul>
+                        <ul>
+                        <li><i class="material-icons">card_giftcard</i></li>
+                        <li>
+						<h4>Box Découverte</h4>
+                            </li></ul>
+                                  <ul>
+                        <li><i class="material-icons">perm_contact_calendar</i></li>
+                        <li>
+						<h4>Nous rejoindre</h4>
+                            </li></ul>
+                            <ul>
+                              <li><i class="material-icons">call</i></li>
+                            <li>
+						<h4>Appelez nous</h4>
+						</li></ul>
+						<ul>
+						  <li><i class="material-icons">email</i></li><li>
+						<h4>Contactez nous</h4>
+						</li></ul>
+					</div>
+				</div>
+
+<div id="container-floating">
+  <div class="nd3 nds">
+      <img class="reminder" src='img/ic_chat_white_24dp/web/ic_chat_white_24dp_1x.png' />
+      <h4 class='FontBlack'>SMS</h4>
+  </div>
+  <div class="nd1 nds">
+  <img class="reminder" src='img/ic_email_white_24dp/web/ic_email_white_24dp_1x.png' />
+  <h4 class='FontBlack'>Mail</h4>
+  </div>
+  <div id="floating-button">
+    <p class="plus">+</p>
+    <img class="edit" src='img/ic_call_white_24dp/web/ic_call_white_24dp_1x.png'/>   
+    <h4 class='FontBlack'>Appeler</h4>
+  </div>
+</div>
+
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class='container'>
+			<div class='content-height'>
+				<div class="videoheader">
+					<video muted autoplay="true" loop="true" src="Header/video/silveract.mp4"></video>
+				</div>
+				<div class='content'>
+					<div class='content-text'>
+						<h2 class='FontWhite'>Parce que notre quotidien, c’est d’animer le votre !</h2>
+						<p class='pWhite20'>Vos proches s'ennuient, ça tombe bien !<br>
+						Nous sommes là pour leur proposer des expériences uniques et inoubliables .</p>
+						<h4 class='FontWhite'>Silver Act' des activités pour seniors.</h4>
+						<h4 class='FontWhite red-btn'>RÉSERVER VOTRE EXPÉRIENCE</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class='flex-search-box'>
+			<div class='container'>
+				<div id='search-box'>
+					<div class='check-in'>
+						<h4 class='FontBlack selected'>Réservez votre expérience</h4><img src='Header/img/icons/search_icon.png'>
+						<div class='tog'>
+							<ul>
+								<li class='item'>
+									<p class='pWhite20-m'>Natation</p>
+								</li>
+								<li class='item'>
+									<p class='pWhite20-m'>Découverte du web</p>
+								</li>
+								<li class='item'>
+									<p class='pWhite20-m'>Science de la vie</p>
+								</li>
+								<li class='item'>
+									<p class='pWhite20-m'>Découverte de la VR</p>
+								</li>
+								<li class='item'>
+									<p class='pWhite20-m'>Balade en Forêt</p>
+								</li>
+								<li class='item'>
+									<p class='pWhite20-m'>Visite musée</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class='bordure'>
+					<h4 class='FontBlack'>Quand ?</h4><input class='ui-datepicker-header .ui-widget' id='datepicker' type='text'> <img class='selector' id='datepickerImage' src='Header/js/images/calendar_icon.png'></div>
+					<div class='check-out'>
+						<h4 class='FontWhite'>RÉSERVER</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
             
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas id illo voluptatum nostrum corporis, labore et veniam doloremque, inventore, sit aspernatur amet vero itaque assumenda consequatur fuga a dolorum dicta.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas id illo voluptatum nostrum corporis, labore et veniam doloremque, inventore, sit aspernatur amet vero itaque assumenda consequatur fuga a dolorum dicta.</p>
