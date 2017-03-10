@@ -20,7 +20,7 @@ hr{
 }
 
 .footer-logo{
-    width: 80%;
+    width: 50%;
     display: flex;
     align-items: center;
 }
@@ -35,15 +35,9 @@ hr{
     cursor: pointer;
 }
 
-.register{
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+.register p{
+   padding-right: 25px;
 }
-
-
 .content-footer{
     width: 90%;
     margin: 0 auto;
