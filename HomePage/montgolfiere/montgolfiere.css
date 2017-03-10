@@ -8,9 +8,6 @@
     padding-left: 10px;
 }
 
-
-
-
 /*PARENTS*/
 
 .mongo-bg{
@@ -44,6 +41,7 @@
     background: #fff;
     border: border-box;
     padding: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
 }
 
 .box p{
@@ -68,12 +66,13 @@
     .mongo-bg{
         display: flex;
         flex-flow: column wrap;
-        justify-content: space-around;
+        justify-content: flex-end;
     }
     
     .inbox-montgolfiere{
         width: 90%;
         margin: 0 auto;
+        margin-bottom: 50px;
     }
     
     .content-box{
@@ -83,6 +82,7 @@
     
     .box{
         width: 100%;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
     }
     
 .red-button{

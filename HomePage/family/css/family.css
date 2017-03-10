@@ -61,6 +61,7 @@
         background: transparent;
         display: flex;
         justify-content: flex-start;
+        height: 250px;
     }
     
     .white-box{
@@ -71,6 +72,8 @@
     justify-content: space-between;
     padding: 16px;
     box-shadow: none;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
 }
     
     .red-box{
