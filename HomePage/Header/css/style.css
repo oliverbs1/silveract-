@@ -115,6 +115,13 @@ header {
     margin-bottom: 16px;
 }
 
+.register-with-google img{
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+    margin-bottom: 16px;
+}
+
 .bar{
     width: 100%;
     border-bottom: 2px solid #CCCCCC;
@@ -459,13 +466,77 @@ header {
 	padding-left: 30px;
 }
 
+.content-tog{
+    width: 40%;
+    height: 450px;
+    background: #fff;
+    margin-left: 30%;
+    margin-top: 100px;
+    display: flex;
+}
+
+.prev-arrow{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E55155;
+}
+.prev-arrow i{
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.next-arrow{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E55155;
+}
+.next-arrow i{
+    font-size: 4rem;
+    cursor: pointer;
+}
+
 .tog {
-	position: absolute;
-	bottom: 100px;
+    width: 80%;
+    margin: 0 auto;
 	cursor: pointer;
-	background: #E55155;
-	padding: 16px;
+	padding: 10px;
 	border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 40px;
+}
+
+.second-selection{
+    display: none;
+}
+
+.close-tog{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.tog ul{
+    margin-top: 20px;
+}
+
+.tog ul li{
+    border: 1px solid black;
+    background: whitesmoke;
+    padding-top: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tog ul li:hover{
+    background: #E55155;
 }
 
 

@@ -3,13 +3,27 @@ $(document).ready(function() {
     $('#datepickerImage').click(function() {
     $("#datepicker").focus();
   });
-    $('.tog').hide();
     $('.check-in').click(function(){
-        $('.tog').slideToggle();
+        $('.pop-out').fadeIn();
+        $('.content-tog').fadeIn();
     });
   $(".item").click(function() {
   $("h4.selected").text($(this).text());
+  $('.pop-out').fadeOut();
+      $('.content-tog').fadeOut();
 });
+    $('.next-arrow i').click(function(){
+        $('.first-selection').hide();
+        $('.second-selection').fadeIn(1000);
+    });
+    $('.prev-arrow i').click(function(){
+        $('.second-selection').hide();
+        $('.first-selection').fadeIn(1000);
+    });
+    $('.close-tog').click(function(){
+        $('.pop-out').fadeOut();
+        $('.content-tog').fadeOut();
+    })
     $('#menu-hamburger').hide();
     
     $('.icon-burger').click(function(){
