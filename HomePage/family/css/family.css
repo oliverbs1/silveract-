@@ -1,0 +1,90 @@
+
+
+/*Réglage full-width*/
+
+.team{
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    background-image: url('../Team1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*réglage header*/
+
+/*réglage box*/
+
+.white-box{
+    width: 35%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-right: 10%;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+
+.white-box p {
+    margin-top: 32px;
+}
+
+
+/* réglage bouton */
+
+.red-box{
+    width: 40%;
+    background-color: #E55458;
+    padding: 16px;
+    text-align: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* responsive */
+
+@media all and (max-width: 750px){
+    
+    .team{
+        background: transparent;
+        display: flex;
+        justify-content: flex-start;
+        height: 250px;
+    }
+    
+    .white-box{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-shadow: none;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+}
+    
+    .red-box{
+    width: 45%;
+    background-color: #E55458;
+    padding: 16px;
+    text-align: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+    
+}

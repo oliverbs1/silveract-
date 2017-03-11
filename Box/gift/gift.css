@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.gift_box {
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.banner-gift {
+    background-image:url(../img/banner_gift_red.png);
+    height: 200px;
+}
+
+.gift-img-container {
+    position: absolute;
+    top: -20%;
+    right: 10px;
+
+}
+
+.gift-text {
+    padding-top: 80px;
+    margin-left: 51px;
+}
+
+@media all and (max-width: 570px){
+    .gift-img-container {
+        display: none;
+    }
+}

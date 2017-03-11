@@ -1,0 +1,180 @@
+.container-box {
+    box-shadow: 1px 1px 12px #555;
+    background-color: : red;
+    height: auto;
+}
+
+.img-box-container {
+    float: left;
+    width: 50%;
+    height: 100%;
+    /*background-image: url('../img/imgVR.png');
+    background-position: 100%;*/
+}
+
+ul {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.vr {
+    width: 100%;
+}
+
+.vrResp {
+    display: none;
+}
+
+.choix {
+    float: left;
+}
+
+
+.valable_un_an {
+    float: right;
+    margin-right: 15px;
+}
+
+.text {
+    width: 50%;
+    float: left;
+    position: relative;
+    line-height: 30px;
+}
+
+.text h3 {
+    margin: 0px 0 5px 25px;
+}
+
+.text h4 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.ico {
+    margin-right: 15px;
+}
+
+.text li {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+
+.sep {
+    clear: both;
+    height: 1px;
+    width: 92%;
+    background-color: #95989A;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.border {
+    clear: both;
+    height: 2px;
+    width: 100%;
+    background-color: #95989A;
+}
+
+.name {
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.red {
+    color: #E55155;
+    font-size: 22px;
+    margin-right: 9px;
+    letter-spacing: 1px;
+}
+
+.desc {
+    clear: both;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 55px;
+    line-height: 26px;
+}
+
+.red-button-box{
+    width: 27%;
+    padding: 16px;
+	text-align: center;
+	background-color: #E55458;
+	box-sizing: border-box;
+	border-radius: 2px;
+	text-decoration: none;
+    position: relative;
+    float: right;
+    margin: 0px;
+    margin-right: 5%;
+    margin-top: 15px;
+    line-height: normal;
+}
+
+.text-prix {
+    float: right;
+    line-height: 24px;
+    margin-right: 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 750px) {
+    .container-box {
+        box-shadow: 1px 1px 12px #555;
+    }
+
+    .img-box-container {
+        float: left;
+        width: 100%;
+        height: 40%;
+    }
+
+    .text {
+        width: 100%;
+        height: 60%;
+    }
+    .vr {
+        width: 100%;
+        display: none;
+    }
+
+    .vrResp {
+        display: block;
+        width: 100%;
+    }
+
+    .red-button-box{
+        width: 90%;
+        margin-right: 5%;
+    }
+
+    .text-prix {
+        clear: both;
+        margin-right: 28%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .red-button {
+        width: 50%;
+        margin-right: 25%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .red-button {
+        width: 50%;
+    }
+
+    .sep {
+        margin-left: 5%;
+    }
+}

@@ -1,0 +1,151 @@
+
+.com_and_stars {
+    margin-top 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.com_and_stars h4 {
+    float: left;
+}
+
+.com_and_stars p {
+    float: left;
+}
+
+.subtitle-star {
+    float: left;
+    width: 110px;
+    margin-right: 20px;
+    margin-left: 28px;
+}
+
+.star {
+    color: #E55155;
+    width: 10px;
+    display: flex;
+}
+
+.commentaire-container {
+    clear: both;
+    display: flex;
+    align-items: baseline;
+    wrap: wrap;
+    justify-content: center;
+}
+
+.commentaire {
+    /* width: 409px; */
+    width: 80%;
+    height: 160px;
+    background: white;
+    box-shadow: 0 6px 21px 0 rgba(0,0,0,0.2);
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.commentaire-droit {
+    margin-right: 24px;
+}
+
+.com-pic {
+    width: 31%;
+    float: left;
+    margin: 16px;
+}
+
+.com-content {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.com-date-n-star {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.com-name {
+    margin-top: 24px;
+}
+
+.com-date {
+    margin-top: 15px;
+}
+
+.com-star-container {
+    float: left;
+    margin-left: 36px;
+    margin-top: -10px
+}
+
+.com-text {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1250px) {
+  .com-star-container  {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1138px) {
+  .commentaire-droit  {
+    display: none;
+  }
+
+  .com-star-container  {
+    margin-left: 36px;
+  }
+
+  .commentaire-milieu {
+      margin-right: 24px;
+  }
+}
+
+
+@media (max-width: 840px) {
+  .commentaire-milieu  {
+    display: none;
+  }
+
+  .commentaire {
+      margin-left: 0;
+  }
+
+  .com-pic {
+      width: 35%;
+  }
+}
+
+@media (max-width: 493px) {
+
+    .com-pic {
+        width: 27%;
+    }
+
+    .com-pic img  {
+        width: 100%
+    }
+
+    .commentaire {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .com-star-container {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 304px) {
+
+    .com-star-container {
+        display: none;
+    }
+}

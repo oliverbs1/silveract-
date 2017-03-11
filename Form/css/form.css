@@ -1,0 +1,89 @@
+.back_arrow img{
+    width: 3%;
+}
+
+.back_arrow {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+    height: 564px;
+    box-shadow: 1px 1px 12px #555;
+    background-color: white;
+    top: 13px;
+}
+
+.tt {
+    padding-top: 24px;
+    padding-left: 25px;
+    font-size: 25px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+input {
+    border-bottom: 2px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mail {
+    border-bottom: 2px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+input:hover {
+    border-bottom: 2px solid #009688;
+}
+
+button {
+    width: 163px;
+    height: 43px;
+    border-radius: 5px;
+    background-color: #E55458;
+    color: white;
+    font-size: 17px;
+    border: none;
+    letter-spacing: 2px;
+}
+
+form p {
+    text-align: center;
+    margin-top: 30px;
+    color: #95989A;
+}
+
+.exp {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+li:hover ul.hoverMenu {
+    display: block
+}
+
+@media screen and (max-width: 750px) {
+    .exp {
+        display: none;
+    }
+    .form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
