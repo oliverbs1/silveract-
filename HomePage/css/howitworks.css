@@ -1,0 +1,59 @@
+/* réglage block */
+
+.content-old {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*réglage taille image*/
+
+.inboxhiw {
+    width: 60%;
+    height: 300px;
+    background-image: url(../images/howitworks.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+
+/*réglage texte*/
+
+.texthiw {
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.texthiw h3 {
+    color: #E55458;
+}
+
+.texthiw p {
+    margin-top: 24px;
+}
+
+
+/*Media query*/
+
+@media all and (max-width: 750px) {
+    .inboxhiw {
+        display: none;
+    }
+    .texthiw {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .content-old {
+        height: auto;
+    }
+}

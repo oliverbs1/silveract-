@@ -1,0 +1,101 @@
+/*réglage taille image*/
+
+.inbox {
+    display: flex;
+    width: auto;
+    height: 300px;
+    background-image: url(../images/box.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.inbox h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 48px;
+    color: #fff;
+}
+
+
+/*réglage texte*/
+
+.textred {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    flex-wrap: wrap;
+}
+
+.textred h3 {
+    color: #E55458;
+}
+
+.textred p {
+    margin-top: 24px;
+}
+
+.bouttonred {
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 160px;
+    height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 24px;
+    background-color: #E55458;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*Media queri*/
+
+@media all and (min-width: 750px) {
+    .bouttoncard {
+        display: none;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .inbox {
+        height: 200px;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column wrap;
+    }
+    .textred {
+        display: none;
+    }
+    .inbox h3 {
+        margin-left: 16px;
+        margin-top: 24px;
+    }
+    .inbox a {
+        flex-flow: column wrap;
+        margin-top: auto;
+        height: 36px;
+        background-color: #E55458;
+        box-sizing: border-box;
+        border-radius: 2px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 16px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: #fff;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+    }
+}

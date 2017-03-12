@@ -1,101 +1,95 @@
-
-
 /* Header */
 
-.subtitle{
+.subtitle {
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 10px;
 }
 
+
 /*PARENTS*/
 
-.mongo-bg{
+.mongo-bg {
     width: 100%;
     height: 400px;
-    background-image: url('montgolfiere.jpg');
+    background-image: url('../images/montgolfiere.jpg');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
 }
 
-.inbox-montgolfiere{
+.inbox-montgolfiere {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 /*BOX*/
 
-.content-box{
+.content-box {
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.box{
+.box {
     width: 70%;
     background: #fff;
     border: border-box;
     padding: 16px;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.box p{
+.box p {
     margin-top: 10px;
 }
 
-
-.red-button{
+.red-button {
     width: 30%;
     padding: 16px;
-	text-align: center;
-	background-color: #E55458;
-	box-sizing: border-box;
-	border-radius: 2px;
-	text-decoration: none;
+    text-align: center;
+    background-color: #E55458;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-decoration: none;
     position: relative;
     float: right;
     margin-top: 20px;
 }
 
-@media all and (max-width: 750px){
-    .mongo-bg{
+@media all and (max-width: 750px) {
+    .mongo-bg {
         display: flex;
         flex-flow: column wrap;
         justify-content: flex-end;
     }
-    
-    .inbox-montgolfiere{
+    .inbox-montgolfiere {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 50px;
     }
-    
-    .content-box{
+    .content-box {
         width: 90%;
         margin: 0 auto;
     }
-    
-    .box{
+    .box {
         width: 100%;
-        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     }
-    
-.red-button{
-    width: 30%;
-    padding: 16px;
-	text-align: center;
-	background-color: #E55458;
-	box-sizing: border-box;
-	border-radius: 2px;
-	text-decoration: none;
-    position: relative;
-    float: right;
-    margin-top: 14px;
+    .red-button {
+        width: 30%;
+        padding: 16px;
+        text-align: center;
+        background-color: #E55458;
+        box-sizing: border-box;
+        border-radius: 2px;
+        text-decoration: none;
+        position: relative;
+        float: right;
+        margin-top: 14px;
+    }
 }
-}
-
