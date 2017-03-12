@@ -1,4 +1,4 @@
-.back_arrow img {
+.back_arrow img{
     width: 3%;
 }
 
@@ -7,10 +7,11 @@
     margin-left: 25px;
 }
 
+
 .form {
-    width: 40%;
-    margin: 30px auto;
-    height: 580px;
+    width: 90%;
+    margin: 0 auto;
+    height: 564px;
     box-shadow: 1px 1px 12px #555;
     background-color: white;
     top: 13px;
@@ -32,8 +33,8 @@ input {
     border-left: none;
     border-right: none;
     height: 30px;
-    width: 80%;
-    margin: 10px 30px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .mail {
@@ -43,7 +44,7 @@ input {
     border-right: none;
     height: 30px;
     width: 80%;
-    margin: 10px 30px;
+    margin: 0 auto;
 }
 
 input:hover {
@@ -59,13 +60,11 @@ button {
     font-size: 17px;
     border: none;
     letter-spacing: 2px;
-    margin-left: 172px;
-    margin-top: 10px;
 }
 
 form p {
     text-align: center;
-    margin: 30px 25px 0 25px;
+    margin-top: 30px;
     color: #95989A;
 }
 
@@ -73,6 +72,7 @@ form p {
     width: 90%;
     margin: 0 auto;
 }
+
 
 li:hover ul.hoverMenu {
     display: block
@@ -85,23 +85,5 @@ li:hover ul.hoverMenu {
     .form {
         width: 80%;
         margin: 0 auto;
-    }
-    button {
-        width: 163px;
-        height: 43px;
-        border-radius: 5px;
-        background-color: #E55458;
-        color: white;
-        font-size: 17px;
-        border: none;
-        letter-spacing: 2px;
-        margin-left: 92px;
-        margin-top: 10px;
-    }
-    form p {
-        text-align: center;
-        margin: 30px 25px 0 25px;
-        color: #95989A;
-        font-size: 12px
     }
 }

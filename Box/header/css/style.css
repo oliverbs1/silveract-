@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -102,6 +102,172 @@ header {
 	float: left;
 }
 
+
+/* INSCRIPTION POP UP*/
+
+
+.pop-out{
+   width: 100%;
+   height: 700px;
+   background: rgba(0,0,0,0.5);
+}
+
+.pop-up{
+    width: 40%;
+    height: 350px;
+    background: #fff;
+    margin-left: 30%;
+    margin-top: 100px;
+}
+
+.pop-up-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.close-pop-up{
+    cursor: pointer;
+}
+
+.register-with-mail{
+    width: 100%;
+    background: #E55155;
+    margin-top: 20px;
+    border: solid 1px #E55155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.register-with-mail img{
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+    margin-bottom: 16px;
+}
+
+.register-with-mail p{
+    margin-bottom: 16px;
+}
+
+.register-with-google{
+    width: 100%;
+    padding-top: 14px;
+    margin-top: 10px;
+    display: flex;
+    border: solid 1px black;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.register-with-google p{
+    margin-bottom: 16px;
+}
+
+.register-with-google img{
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+    margin-bottom: 16px;
+}
+
+.bar{
+    width: 100%;
+    border-bottom: 2px solid #CCCCCC;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.pop-end{
+    width: 40%;
+    height: 500px;
+    background: #fff;
+    margin-left: 30%;
+    margin-top: 20px;
+    display: none;
+    padding: 16px;
+}
+
+.pop-end img{
+    cursor: pointer;
+}
+
+#formulaire{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+#formulaire input{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.name{
+    background-image: url(../img/ic_person_black_24dp/web/ic_person_black_24dp_1x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.email{
+    background-image: url('../img/ic_mail_outline_black_24dp/web/ic_mail_outline_black_24dp_1x.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.password{
+    background-image: url('../img/Locker.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#formulaire p{
+    margin-top: 20px;
+    background: #E55155;
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pop-end-content{
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.p-pop:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    -webkit-transition: 0.2s all;
+}
+
+.btn-pop{
+    border: solid  2px #E55155;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-pop:hover{
+    background: #E55155;
+    color: #fff;
+    -webkit-transition: 0.5s all;
+}
+
+.condition{
+    width: 94%;
+    margin: 0 auto;
+    padding: 12px;
+}
 /* Boutton float */
 
 #floating-button{
@@ -274,7 +440,7 @@ header {
 }
 
 #container-floating:hover .nds{
-  
+
   animation: bounce-nds 0.1s linear;
   animation-fill-mode:  forwards;
 }
@@ -573,12 +739,12 @@ header {
 		flex-wrap: wrap;
 		z-index: 1000000000000000000;
 	}
-    
+
     .content-burger{
         display: flex;
         flex-flow: column wrap;
     }
-    
+
     .content-burger ul{
         display: flex;
     }
@@ -589,7 +755,7 @@ header {
         padding: 16px;
         cursor: pointer;
     }
-    
+
     .content-burger ul:hover{
         color: #E55155;
         -webkit-transition : 0.2s;

@@ -6,14 +6,14 @@
 
 .Content-vid{
     width: 90%;
-    height: 300px;
+    height: 320px;
     margin: 0 auto;
     display: flex;
 }
 
 /* réglage block image */
 
-.img-content{
+.vid-content{
     width: 50%;
     background-image: url(old_streetart.jpeg);
     background-position: cover;
@@ -50,12 +50,16 @@
 @media all and (max-width: 750px) {
 
     .croptext {
-			display: none;
+		display: none;
     }
 
-    .img-content{
+    .vid-content{
         width: 100%;
         margin: 0 auto;
+    }
+
+    .Content-vid {
+        height: 300px;
     }
 
 }

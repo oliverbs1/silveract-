@@ -624,6 +624,12 @@ header {
     }
 }
 
+@media all and (max-width: 960px) {
+	#search-box {
+		display: none;
+	}
+}
+
 @media all and (max-width: 750px) {
 	/* élément qui disparaissent */
 	#search-box {
