@@ -1,103 +1,99 @@
-
-
-h2{
+h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 2rem;
 }
 
-h3{
+h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.FontRed{
+.FontRed {
     color: #E55155;
 }
 
-h4{
+h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.FontWhite{
+.FontWhite {
     color: #fff;
 }
 
-.FontBlack{
+.FontBlack {
     color: #212121;
 }
 
-.pWhite20-m{
+.pWhite20-m {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     font-weight: 500;
     color: #fff;
 }
 
-.pBlack20-m{
+.pBlack20-m {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     font-weight: 500;
     color: #212121;
 }
 
-.pRed20-m{
+.pRed20-m {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     font-weight: 500;
     color: #E55155;
 }
 
-
-.pWhite20{
+.pWhite20 {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #fff;
 }
 
-.pBlack20{
+.pBlack20 {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #212121;
 }
 
-.pRed20{
+.pRed20 {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #E55155;
 }
 
-.pWhite16{
+.pWhite16 {
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     color: #fff;
 }
 
-.pWhite14{
+.pWhite14 {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     font-weight: 400;
     color: #fff;
 }
 
-.pBlack14{
+.pBlack14 {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     font-weight: 400;
     color: #212121;
 }
 
-.pRed14{
+.pRed14 {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     font-weight: 400;
     color: #E55155;
 }
-
