@@ -9,6 +9,15 @@
 
 /*PARENTS*/
 
+.moments-uniques-bg {
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/moment_unique.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
 .moments-uniques-bg2 {
     width: 100%;
     height: 400px;
